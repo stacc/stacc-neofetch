@@ -32,23 +32,33 @@ cd stacc-neofetch
 ### 3. Copy ascii art
 
 ```bash
-mkdir -p ~/.config/neofetch/ascii-art && cp stacc.txt $_
+mkdir -p ~/.config/neofetch/ascii-art && cp logos/* $_
 ```
 
-### 4. Add Neofetch to shell config
+### 4. Pick a logo
+
+There are several logos available, pick your favorite.
+
+```bash
+export LOGO=stacc.txt
+# or
+export LOGO=stacc-pride.txt
+```
+
+### 5. Add Neofetch to shell config
 
 For bash.
 
 ```bash
-echo "neofetch --ascii ~/.config/neofetch/ascii-art/stacc.txt" >> ~/.bashrc
+echo "neofetch --ascii ~/.config/neofetch/ascii-art/$LOGO" >> ~/.bashrc
 ```
 
 For zsh.
 
 ```zsh
-echo "neofetch --ascii ~/.config/neofetch/ascii-art/stacc.txt" >> ~/.zshrc
+echo "neofetch --ascii ~/.config/neofetch/ascii-art/$LOGO" >> ~/.zshrc
 ```
 
-### 5. All done
+### 6. All done
 
 Reload your shell and continue working! ☕️
