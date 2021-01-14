@@ -25,7 +25,7 @@ sudo apt update && sudo apt install neofetch
 ### 2. Clone this repo and open folder
 
 ```bash
-git clone git@github.com:stacc-as/stacc-neofetch.git
+git clone git@github.com:stacc/stacc-neofetch.git
 cd stacc-neofetch
 ```
 
